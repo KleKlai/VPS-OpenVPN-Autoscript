@@ -38,9 +38,9 @@ root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenV
 
 
 ### Original Script By
-Fornesia 
-Rzengineer
-Fawzya
-Clrkz
+`Fornesia` <br>
+`Rzengineer`<br>
+`Fawzya`<br>
+`Clrkz`<br>
 
 Modified By: Magallen, Maynard

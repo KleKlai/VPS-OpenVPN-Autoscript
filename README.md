@@ -1,7 +1,7 @@
 # Debian 8 SSH, Dropbear & OpenVPN Autoscript
 
 ### Requirements:
-Virtual Private Server (VPS) 
+Virtual Private Server (VPS) <br>
 Debian 7
 
 

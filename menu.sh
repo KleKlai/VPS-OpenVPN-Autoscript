@@ -1,6 +1,7 @@
 #!/bin/bash
 #Menu
-
+echo -e "* Command   | Description"
+echo -e ""
 echo -e "* menu      : Displays a list of available commands"
 echo -e "* usernew   : Creating an SSH Account"
 echo -e "* trial     : Create a Trial Account"

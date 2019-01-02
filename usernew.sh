@@ -13,7 +13,7 @@ echo -e ""
 echo -e "====SSH Account Information====" | lolcat
 echo -e "Host: $IP"
 echo -e "Username: $Login "
-echo -e "Password: $Pass" 
+echo -e "Password: $Pass"
 echo -e "Port OpenSSH: 22,444"
 echo -e "Port Dropbear: 143,3128"
 echo -e "Port SSL: 443"
@@ -22,5 +22,5 @@ echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn"
 echo -e "-----------------------------" | lolcat
 echo -e "Expiration: $exp"
 echo -e "=============================" | lolcat
-echo -e "Mod by Clrkz"
+echo -e "Modified by Magallen, Maynard"
 echo -e ""

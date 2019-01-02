@@ -210,9 +210,9 @@ apt-get -y --force-yes -f install libxml-parser-perl
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/trial.sh"
+wget -O menu "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/trial.sh"
 wget -O delete "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/hapus.sh"
 wget -O check "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/user-list.sh"

@@ -3,7 +3,7 @@
 # Script Copyright www.fornesia.com
 # Mod by Clrkz
 # ==========================
-# 
+#
 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 
@@ -50,6 +50,6 @@ echo "------------------------------------------------" | lolcat
 
 echo "";
 
-echo "Mod by Clrkz";
+echo "Modified by Magallen, Maynard";
 
 echo "";

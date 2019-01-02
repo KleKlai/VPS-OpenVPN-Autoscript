@@ -37,3 +37,10 @@ root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenV
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 
 
+### Original Script By
+Fornesia 
+Rzengineer
+Fawzya
+Clrkz
+
+Modified By: Magallen, Maynard

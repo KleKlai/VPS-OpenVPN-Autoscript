@@ -145,7 +145,7 @@ service dropbear restart
 # install squid3
 cd
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/squid3.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/squid3.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 

@@ -62,28 +62,24 @@ apt-get -y install nginx
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
-echo 'echo -e "      # ###       ###                  /"' >> .bashrc
-echo 'echo -e "    /  /###  /     ###               #/"' >> .bashrc
-echo 'echo -e "   /  /  ###/       ##               ##"' >> .bashrc
-echo 'echo -e "  /  ##   ##        ##               ##"' >> .bashrc
-echo 'echo -e " /  ###             ##               ##"' >> .bashrc
-echo 'echo -e "##   ##             ##  ###  /###    ##  /##   ######"' >> .bashrc
-echo 'echo -e "##   ##             ##   ###/ #### / ## / ### /#######"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##   ###/  ##/   / /      ##"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##         ##   /         /"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##         ##  /         /"' >> .bashrc
-echo 'echo -e " ##  ##             ##    ##         ## ##        ###"' >> .bashrc
-echo 'echo -e "  ## #      /       ##    ##         ######        ###"' >> .bashrc
-echo 'echo -e "   ###     /        ##    ##         ##  ###        ###"' >> .bashrc
-echo 'echo -e "    ######/         ### / ###        ##   ### /      ##"' >> .bashrc
-echo 'echo -e "      ###            ##/   ###        ##   ##/       ##"' >> .bashrc
-echo 'echo -e "                                                     /"' >> .bashrc
-echo 'echo -e "                                                    /"' >> .bashrc
-echo 'echo -e "                                                   /"' >> .bashrc
-echo 'echo -e "                                                  /"' >> .bashrc
-echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script Highly Modified By: Maynard Magallen"' >> .bashrc
-echo 'echo -e "Type menu to display list of commands"' >> .bashrc
+echo 'echo -e ".___  ___.      ___   ____    ____ .__   __.      ___      .______       _______  "' >> .bashrc
+echo 'echo -e "|   \/   |     /   \  \   \  /   / |  \ |  |     /   \     |   _  \     |       \   "' >> .bashrc
+echo 'echo -e "|  \  /  |    /  ^  \  \   \/   /  |   \|  |    /  ^  \    |  |_)  |    |  .--.  |  "' >> .bashrc
+echo 'echo -e "|  |\/|  |   /  /_\  \  \_    _/   |  . `  |   /  /_\  \   |      /     |  |  |  | "' >> .bashrc
+echo 'echo -e "|  |  |  |  /  _____  \   |  |     |  |\   |  /  _____  \  |  |\  \----.|  '--'  | "' >> .bashrc
+echo 'echo -e "|__|  |__| /__/     \__\  |__|     |__| \__| /__/     \__\ | _| `._____||_______/  "' >> .bashrc
+echo 'echo -e "                                                                                    "' >> .bashrc
+echo 'echo -e ".___  ___.      ___       _______      ___       __       __       _______ .__   __. "' >> .bashrc
+echo 'echo -e "|   \/   |     /   \     /  _____|    /   \     |  |     |  |     |   ____||  \ |  | "' >> .bashrc
+echo 'echo -e "|  \  /  |    /  ^  \   |  |  __     /  ^  \    |  |     |  |     |  |__   |   \|  | "' >> .bashrc
+echo 'echo -e "|  |\/|  |   /  /_\  \  |  | |_ |   /  /_\  \   |  |     |  |     |   __|  |  . `  | "' >> .bashrc
+echo 'echo -e "|  |  |  |  /  _____  \ |  |__| |  /  _____  \  |  `----.|  `----.|  |____ |  |\   | "' >> .bashrc
+echo 'echo -e "|__|  |__| /__/     \__\ \______| /__/     \__\ |_______||_______||_______||__| \__| "' >> .bashrc
+echo 'echo -e ""' >> .bashrc
+echo 'echo -e "				=[ OpenVPN v2.0" | lolcat' >> .bashrc
+echo 'echo -e "+ -- --=[ DDOS Protection ENABLED"' >> .bashrc
+echo 'echo -e "+ -- --=[ BBR Technology DISABLED"' >> .bashrc
+echo 'echo -e "				=[ Modified by: Maynard"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -260,8 +256,8 @@ apt-get install neofetch
 
 # info
 clear
-echo "Autoscript Include:" | tee log-install.txt
-echo "===========================================" | tee -a log-install.txt
+echo "Script Includ the following:" | tee log-install.txt
+echo "+==========================+" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
 echo "-------"  | tee -a log-install.txt
@@ -275,17 +271,17 @@ echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-echo "menu (Displays a list of available commands)"  | tee -a log-install.txt
-echo "usernew (Creating an SSH Account)"  | tee -a log-install.txt
-echo "trial (Create a Trial Account)"  | tee -a log-install.txt
-echo "delete (Clearing SSH Account)"  | tee -a log-install.txt
-echo "check (Check User Login)"  | tee -a log-install.txt
-echo "member (Check Member SSH)"  | tee -a log-install.txt
-echo "restart (Restart Service dropbear, webmin, squid3, openvpn and ssh)"  | tee -a log-install.txt
-echo "reboot (Reboot VPS)"  | tee -a log-install.txt
-echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
-echo "info (System Information)"  | tee -a log-install.txt
-echo "about (Information about auto install script)"  | tee -a log-install.txt
+echo "menu (Display available commands)"  | tee -a log-install.txt
+echo "usernew (Create New Account)"  | tee -a log-install.txt
+echo "trial (Create 24hrs Trial Account)"  | tee -a log-install.txt
+echo "delete (Terminate account access)"  | tee -a log-install.txt
+echo "check (Check account login)"  | tee -a log-install.txt
+echo "member (List all member)"  | tee -a log-install.txt
+echo "restart (Restart dropbear, webmin, squid3, OpenVPN and SSH Service)"  | tee -a log-install.txt
+echo "reboot (Restart Virtual Server)"  | tee -a log-install.txt
+echo "speedtest (Perform server bandwidth speedtest)"  | tee -a log-install.txt
+echo "info (Display OS Information)"  | tee -a log-install.txt
+echo "about (Display Script Information)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Other features"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
@@ -298,7 +294,7 @@ echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT TIME HOURS 12 NIGHT"  | tee -a log-install.txt
+echo "Server reboot every 00:00"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd

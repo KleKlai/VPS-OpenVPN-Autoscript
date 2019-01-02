@@ -14,9 +14,9 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e ""
 echo -e "====Trial SSH Account====" | lolcat
 echo -e "Host: $IP"
-echo -e "Port OpenSSH: 22,143"
-echo -e "Port Dropbear: 80,443"
-echo -e "Port Squid: 8080,3128"
+#echo -e "Port OpenSSH: 22,143"
+#echo -e "Port Dropbear: 80,443"
+#echo -e "Port Squid: 8080,3128"
 echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn"
 echo -e "Username: $Login"
 echo -e "Password: $Pass\n"

@@ -5,9 +5,9 @@ wget -q -O daftarip http://188.166.215.119:85/ocs/ip.txt
 if ! grep -w -q $MYIP daftarip; then
 	echo "Sorry, only registered IPs can use this script!"
 	if [[ $vps = "vps" ]]; then
-		echo "Powered by Clrkz"
+		echo "Modified by Maynard"
 	else
-		echo "Powered by Clrkz"
+		echo "Modified by Maynard"
 	fi
 	rm -f /root/daftarip
 	exit
@@ -46,7 +46,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # set repo
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/sources.list.debian7"
+wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/sources.list.debian7"
 wget "http://www.dotdeb.org/dotdeb.gpg"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'

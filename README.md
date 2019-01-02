@@ -1,4 +1,4 @@
-# Debian 7 SSH, Dropbear & OpenVPN Autoscript
+# Debian 8 SSH, Dropbear & OpenVPN Autoscript
 
 ### Requirements:
 Virtual Private Server (VPS) 
@@ -33,3 +33,7 @@ root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenV
 | Info       | Display OS Information |
 | About    | Display Script Information      |
 | Exit      | Exit Remote Connection      |
+
+[Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
+
+

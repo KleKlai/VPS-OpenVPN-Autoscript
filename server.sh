@@ -62,24 +62,18 @@ apt-get -y install nginx
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
-echo 'echo -e ".___  ___.      ___   ____    ____ .__   __.      ___      .______       _______  "' >> .bashrc
-echo 'echo -e "|   \/   |     /   \  \   \  /   / |  \ |  |     /   \     |   _  \     |       \   "' >> .bashrc
-echo 'echo -e "|  \  /  |    /  ^  \  \   \/   /  |   \|  |    /  ^  \    |  |_)  |    |  .--.  |  "' >> .bashrc
-echo 'echo -e "|  |\/|  |   /  /_\  \  \_    _/   |  . `  |   /  /_\  \   |      /     |  |  |  | "' >> .bashrc
-echo 'echo -e "|  |  |  |  /  _____  \   |  |     |  |\   |  /  _____  \  |  |\  \----.|  '--'  | "' >> .bashrc
-echo 'echo -e "|__|  |__| /__/     \__\  |__|     |__| \__| /__/     \__\ | _| `._____||_______/  "' >> .bashrc
-echo 'echo -e "                                                                                    "' >> .bashrc
-echo 'echo -e ".___  ___.      ___       _______      ___       __       __       _______ .__   __. "' >> .bashrc
-echo 'echo -e "|   \/   |     /   \     /  _____|    /   \     |  |     |  |     |   ____||  \ |  | "' >> .bashrc
-echo 'echo -e "|  \  /  |    /  ^  \   |  |  __     /  ^  \    |  |     |  |     |  |__   |   \|  | "' >> .bashrc
-echo 'echo -e "|  |\/|  |   /  /_\  \  |  | |_ |   /  /_\  \   |  |     |  |     |   __|  |  . `  | "' >> .bashrc
-echo 'echo -e "|  |  |  |  /  _____  \ |  |__| |  /  _____  \  |  `----.|  `----.|  |____ |  |\   | "' >> .bashrc
-echo 'echo -e "|__|  |__| /__/     \__\ \______| /__/     \__\ |_______||_______||_______||__| \__| "' >> .bashrc
+echo 'echo -e ":::    ::: :::            :::     ::::::::::: "' >> .bashrc
+echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     "' >> .bashrc
+echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     "' >> .bashrc
+echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     "' >> .bashrc
+echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     "' >> .bashrc
+echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     "' >> .bashrc
+echo 'echo -e "###    ### ########## ###     ### ########### "' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "				=[ OpenVPN v2.0" | lolcat' >> .bashrc
+echo 'echo -e "+ -- --=[ OpenVPN v2.0" | lolcat' >> .bashrc
 echo 'echo -e "+ -- --=[ DDOS Protection ENABLED"' >> .bashrc
 echo 'echo -e "+ -- --=[ BBR Technology DISABLED"' >> .bashrc
-echo 'echo -e "				=[ Modified by: Maynard"' >> .bashrc
+echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -259,12 +253,12 @@ clear
 echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "										+==========================+" | tee -a log-install.txt
-echo "										Script Includ the following:" | tee log-install.txt
-echo "										+==========================+" | tee -a log-install.txt
+echo "+==========================+" | tee -a log-install.txt
+echo "Script Includ the following:" | tee log-install.txt
+echo "+==========================+" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "															Service"  | tee -a log-install.txt
-echo "															-------"  | tee -a log-install.txt
+echo "Service"  | tee -a log-install.txt
+echo "-------"  | tee -a log-install.txt
 #echo "OpenSSH  : 22, 444"  | tee -a log-install.txt
 #echo "Dropbear : 143, 3128"  | tee -a log-install.txt
 #echo "SSL      : 443"  | tee -a log-install.txt
@@ -274,8 +268,8 @@ echo "Client config : http://$MYIP:81/client.ovpn"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "															Script"  | tee -a log-install.txt
-echo "															------"  | tee -a log-install.txt
+echo "Script"  | tee -a log-install.txt
+echo "------"  | tee -a log-install.txt
 echo "menu (Display available commands)"  | tee -a log-install.txt
 echo "usernew (Create New Account)"  | tee -a log-install.txt
 echo "trial (Create 24hrs Trial Account)"  | tee -a log-install.txt
@@ -288,8 +282,8 @@ echo "speedtest (Perform server bandwidth speedtest)"  | tee -a log-install.txt
 echo "info (Display OS Information)"  | tee -a log-install.txt
 echo "about (Display Script Information)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "													Other features"  | tee -a log-install.txt
-echo "													--------------"  | tee -a log-install.txt
+echo "Other features"  | tee -a log-install.txt
+echo "--------------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt

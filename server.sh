@@ -256,21 +256,26 @@ apt-get install neofetch
 
 # info
 clear
-echo "Script Includ the following:" | tee log-install.txt
-echo "+==========================+" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Service"  | tee -a log-install.txt
-echo "-------"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "										+==========================+" | tee -a log-install.txt
+echo "										Script Includ the following:" | tee log-install.txt
+echo "										+==========================+" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "															Service"  | tee -a log-install.txt
+echo "															-------"  | tee -a log-install.txt
 #echo "OpenSSH  : 22, 444"  | tee -a log-install.txt
 #echo "Dropbear : 143, 3128"  | tee -a log-install.txt
 #echo "SSL      : 443"  | tee -a log-install.txt
 #echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
+echo "OpenVPN Port  : TCP 1194"  | tee -a log-install.txt
+echo "Client config : http://$MYIP:81/client.ovpn"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Script"  | tee -a log-install.txt
-echo "------"  | tee -a log-install.txt
+echo "															Script"  | tee -a log-install.txt
+echo "															------"  | tee -a log-install.txt
 echo "menu (Display available commands)"  | tee -a log-install.txt
 echo "usernew (Create New Account)"  | tee -a log-install.txt
 echo "trial (Create 24hrs Trial Account)"  | tee -a log-install.txt
@@ -283,19 +288,19 @@ echo "speedtest (Perform server bandwidth speedtest)"  | tee -a log-install.txt
 echo "info (Display OS Information)"  | tee -a log-install.txt
 echo "about (Display Script Information)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Other features"  | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
+echo "													Other features"  | tee -a log-install.txt
+echo "													--------------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Original Script by Fornesia, Rzengineer, Clrkz & Fawzya"  | tee -a log-install.txt
-echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Server reboot every 00:00"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
+echo "Original Script by Fornesia, Rzengineer, Clrkz & Fawzya"  | tee -a log-install.txt
+echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
 rm -f /root/debian7.sh

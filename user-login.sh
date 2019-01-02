@@ -48,7 +48,4 @@ echo " Cara pakai : kill nomor PID " | lolcat
 echo "------------------------------------------------" | lolcat
 
 echo "";
-
-echo "Modified by Magallen, Maynard";
-
 echo "";

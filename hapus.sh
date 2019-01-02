@@ -1,11 +1,12 @@
 #!/bin/bash
 #Script to remove SSH & OpenVPN users
-
-read -p "SSH user name will be deleted : " Users
+clear
+read -p "Enter username to be terminate: " Users
 
 if getent passwd $Users > /dev/null 2>&1; then
         userdel $Users
-        echo -e "User $Users was removed."
+        echo -e "$Users connection has been terminated successfully."
 else
-        echo -e "FAILED: there is no User $Users ."
+        echo -e "Oops something went wrong, $Users doesn't exist ."
+        echo -e "You can use 'member' command to see member list"
 fi

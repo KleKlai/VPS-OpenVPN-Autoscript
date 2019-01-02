@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Script Copyright www.fornesia.com
-# Mod by Clrkz
 # ==========================
 #
 

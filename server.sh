@@ -213,13 +213,13 @@ cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/trial.sh"
-wget -O delete "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/hapus.sh"
-wget -O check "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/user-list.sh"
-wget -O restart "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/resvis.sh"
-wget -O speedtest "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/about.sh"
+wget -O delete "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/hapus.sh"
+wget -O check "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/user-login.sh"
+wget -O member "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/user-list.sh"
+wget -O restart "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/resvis.sh"
+wget -O speedtest "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/info.sh"
+wget -O about "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 

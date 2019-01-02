@@ -97,7 +97,7 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/MMagallen/
 service nginx restart
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/blob/master/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/1194.conf"
@@ -118,9 +118,9 @@ cp client.ovpn /home/vps/public_html/
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/blob/master/badvpn-udpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/badvpn-udpgw"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/blob/master/badvpn-udpgw64"
+  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/badvpn-udpgw64"
 fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
@@ -191,7 +191,7 @@ service fail2ban restart
 # install ddos deflate
 cd
 apt-get -y install dnsutils dsniff
-wget https://raw.githubusercontent.com/Clrkz/VPSAutoScrptz/master/ddos-deflate-master.zip
+wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/ddos-deflate-master.zip
 unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh

@@ -22,14 +22,14 @@ root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenV
 | Command       | Description   |
 | ------------- |:-------------:|
 | Menu       | Display available commands |
-| Usernew    | Create Account      |
+| Usernew    | Create New Account      |
 | Trial      | Create 24hrs Trial Account      |
-| Delete       | Delete Existing Account |
-| Check         | Check Account      |
-| Member       | Member List      |
-| Restart       | Restart services OpenVPN, squid3, ssh, dropbear |
-| Reboot    | Restart VPS      |
-| SpeedTest      | Test VPS internet speed      |
+| Delete       | Terminate account access |
+| Check         | Check account login      |
+| Member       | List all member      |
+| Restart       | Restart dropbear, webmin, squid3, OpenVPN and SSH Service |
+| Reboot    | Restart Virtual Server      |
+| SpeedTest      | Perform server bandwidth speedtest      |
 | Info       | Display OS Information |
 | About    | Display Script Information      |
 | Exit      | Exit Remote Connection      |

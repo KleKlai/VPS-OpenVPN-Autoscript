@@ -82,8 +82,8 @@ echo 'echo -e "                                                    /"' >> .bashr
 echo 'echo -e "                                                   /"' >> .bashrc
 echo 'echo -e "                                                  /"' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script mod by Clrkz"' >> .bashrc
-echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
+echo 'echo -e "Script Highly Modified By: Maynard Magallen"' >> .bashrc
+echo 'echo -e "Type menu to display list of commands"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver

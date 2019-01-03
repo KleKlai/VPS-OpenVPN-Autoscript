@@ -62,15 +62,15 @@ apt-get -y install nginx
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
-echo 'echo -e ":::    ::: :::            :::     ::::::::::: "' >> .bashrc
-echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     "' >> .bashrc
-echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     "' >> .bashrc
-echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     "' >> .bashrc
-echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     "' >> .bashrc
-echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     "' >> .bashrc
-echo 'echo -e "###    ### ########## ###     ### ########### "' >> .bashrc
+echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
+echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     " | lolcat' >> .bashrc
+echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     " | lolcat' >> .bashrc
+echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
+echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ OpenVPN v2.0" | lolcat' >> .bashrc
+echo 'echo -e "+ -- --=[ OpenVPN v2.0"' >> .bashrc
 echo 'echo -e "+ -- --=[ DDOS Protection ENABLED"' >> .bashrc
 echo 'echo -e "+ -- --=[ BBR Technology DISABLED"' >> .bashrc
 echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
@@ -293,8 +293,8 @@ echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Server reboot every 00:00"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Original Script by Fornesia, Rzengineer, Clrkz & Fawzya"  | tee -a log-install.txt
-echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
+#echo "Original Script by Fornesia, Rzengineer, Clrkz & Fawzya"  | tee -a log-install.txt
+#echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
 rm -f /root/debian7.sh

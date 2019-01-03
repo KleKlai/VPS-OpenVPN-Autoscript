@@ -22,5 +22,5 @@ echo -e "Expiration: $exp"
 #echo -e "Port Dropbear: 143,3128"
 #echo -e "Port SSL: 443"
 #echo -e "Port Squid: 8000,8080"
-echo -e "+-- -- --=[Client: http://$IP:81/client.ovpn" | lolcat
+echo -e "+- -- --=[ http://$IP:81/client.ovpn ]=-- -- -+" | lolcat
 echo -e ""

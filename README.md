@@ -2,7 +2,7 @@
 
 ### Requirements:
 Virtual Private Server (VPS) <br>
-Debian 7
+Debian 7/8 (10 Beta)
 
 
 ### Installation: 

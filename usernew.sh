@@ -10,7 +10,7 @@ useradd -e `date -d "$Activetime days" +"%Y-%m-%d"` -s /bin/false -M $Login
 exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e "-------------------"
-echo -e "Account Details" | lolcat
+echo -e "Account Details"
 echo -e "-------------------"
 echo -e "Host: $IP"
 echo -e "Username: $Login "
@@ -22,7 +22,5 @@ echo -e "Expiration: $exp"
 #echo -e "Port Dropbear: 143,3128"
 #echo -e "Port SSL: 443"
 #echo -e "Port Squid: 8000,8080"
-echo -e "-----------------------------" | lolcat
-echo -e "Client Conf: http://$IP:81/client.ovpn"
-echo -e "=============================" | lolcat
+echo -e "+-- -- --=[Client: http://$IP:81/client.ovpn"
 echo -e ""

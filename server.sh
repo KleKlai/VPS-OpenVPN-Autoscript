@@ -25,8 +25,8 @@ state=DavaoDelSur
 locality=Davao
 organization=UniversityofImmaculateConception
 organizationalunit=ITDeparment
-commonname=maynardmagallen
-email=maynard25magallen@gmail.com
+commonname=KlaiHere
+email=klaiklai@nbi.gov.ph
 
 # go to root
 cd

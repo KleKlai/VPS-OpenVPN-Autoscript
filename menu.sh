@@ -1,7 +1,6 @@
 #!/bin/bash
 #Menu
 clear
-echo -e "+ -- -- --=[BETA VERSION]=-- -- -- +" | lolcat
 echo -e ""
 echo -e "+ -- --=[ OpenVPN v2.0]=-- -- +" | lolcat
 echo -e "+ -- --=[ DDOS Protection ENABLED]=-- -- +" | lolcat

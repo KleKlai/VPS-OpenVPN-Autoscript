@@ -5,7 +5,6 @@ echo -e ""
 echo -e "+ -- --=[ OpenVPN v2.0]=-- -- +" | lolcat
 echo -e "+ -- --=[ DDOS Protection ENABLED]=-- -- +" | lolcat
 echo -e "+ -- --=[ BBR Technology DISABLED]=-- -- +" | lolcat
-echo -e "+ -- --=[ Maynard Magallen]=-- -- +"  | lolcat
 echo -e ""
 echo -e ""
 echo -e "Menu"

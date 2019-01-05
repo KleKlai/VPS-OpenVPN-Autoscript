@@ -37,3 +37,9 @@ root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenV
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 
+#### Openvpn setup information
+Protocol: TCP
+Port: 1194
+Payload: Multi
+Client Configuration: http://IP:81/client.ovpn
+

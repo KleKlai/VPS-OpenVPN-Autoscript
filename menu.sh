@@ -1,10 +1,8 @@
 #!/bin/bash
-#Menu
-clear
+#Menu Section
 echo -e ""
-echo -e "+ -- --=[ OpenVPN v2.0]=-- -- +" | lolcat
-echo -e "+ -- --=[ DDOS Protection ENABLED]=-- -- +" | lolcat
-echo -e "+ -- --=[ BBR Technology DISABLED]=-- -- +" | lolcat
+echo -e "+ -- --=[ World is Open Source ]=-- -- +" | lolcat
+
 echo -e ""
 echo -e ""
 echo -e "Menu"

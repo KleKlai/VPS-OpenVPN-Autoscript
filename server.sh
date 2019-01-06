@@ -59,7 +59,8 @@ apt-get update
 apt-get -y install nginx php5-fpm php5-cli
 
 # install essential package
-apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
+apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar iftop htop nethogs nmap
+apt-get -y install build-essential
 
 # install webserver
 cd
@@ -259,8 +260,14 @@ echo "  Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "  OpenVpn	 : TCP (1194)"  | tee -a log-install.txt
 echo "  Badvpn   : badvpn-udpgw port (7300)"  | tee -a log-install.txt
 echo "  Nginx    : 81"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-
+echo ""
+echo "Application & Ports"  | tee -a log-install.txt
+echo ""
+echo "Linux Utility"  | tee -a log-install.txt
+echo ""
+echo " htop"  | tee -a log-install.txt
+echo " iftop"  | tee -a log-install.txt
+echo ""
 
 echo "Extended Information"  | tee -a log-install.txt
 echo "  Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt

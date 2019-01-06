@@ -56,25 +56,10 @@ wget -qO - http://www.webmin.com/jcameron-key.asc | apt-key add -
 apt-get update
 
 # install webserver
-apt-get -y install nginx
+apt-get -y install nginx php5-fpm php5-cli
 
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
-
-echo "clear" >> .bashrc
-echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
-echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     " | lolcat' >> .bashrc
-echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     " | lolcat' >> .bashrc
-echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bashrc
-echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
-echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
-echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
-echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ OpenVPN v2.0"' >> .bashrc
-echo 'echo -e "+ -- --=[ DDOS Protection ENABLED"' >> .bashrc
-echo 'echo -e "+ -- --=[ BBR Technology DISABLED"' >> .bashrc
-echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
-echo 'echo -e ""' >> .bashrc
 
 # install webserver
 cd
@@ -249,52 +234,44 @@ apt-get update
 apt-get install neofetch
 
 # info
-clear
+echo "clear" >> .bashrc
+echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
+echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     " | lolcat' >> .bashrc
+echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     " | lolcat' >> .bashrc
+echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
+echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
+echo 'echo -e "									Beta Test										 "' >> .bashrc
+echo 'echo -e ""' >> .bashrc
+echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
+echo 'echo -e ""' >> .bashrc
+echo 'echo -e "+ -- --=[ Your Virtual Private Server is now up and running"' >> .bashrc
+echo ""
+echo "--------------Server Configuration Details---------------"
+
+echo "Application & Ports"  | tee -a log-install.txt
+echo ""
+echo "  OpenSSH  : 22, 444"  | tee -a log-install.txt
+echo "  Dropbear : 143, 3128"  | tee -a log-install.txt
+echo "  SSL      : 443"  | tee -a log-install.txt
+echo "  Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
+echo "  OpenVpn	 : TCP (1194)"  | tee -a log-install.txt
+echo "  Badvpn   : badvpn-udpgw port (7300)"  | tee -a log-install.txt
+echo "  Nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "+==========================+" | tee -a log-install.txt
-echo "Script Includ the following:" | tee log-install.txt
-echo "+==========================+" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Service"  | tee -a log-install.txt
-echo "-------"  | tee -a log-install.txt
-#echo "OpenSSH  : 22, 444"  | tee -a log-install.txt
-#echo "Dropbear : 143, 3128"  | tee -a log-install.txt
-#echo "SSL      : 443"  | tee -a log-install.txt
-#echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN Port  : TCP 1194"  | tee -a log-install.txt
-echo "Client config : http://$MYIP:81/client.ovpn"  | tee -a log-install.txt
-echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
-echo "nginx    : 81"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Script"  | tee -a log-install.txt
-echo "------"  | tee -a log-install.txt
-echo "menu (Display available commands)"  | tee -a log-install.txt
-echo "usernew (Create New Account)"  | tee -a log-install.txt
-echo "trial (Create 24hrs Trial Account)"  | tee -a log-install.txt
-echo "delete (Terminate account access)"  | tee -a log-install.txt
-echo "check (Check account login)"  | tee -a log-install.txt
-echo "member (List all member)"  | tee -a log-install.txt
-echo "restart (Restart dropbear, webmin, squid3, OpenVPN and SSH Service)"  | tee -a log-install.txt
-echo "reboot (Restart Virtual Server)"  | tee -a log-install.txt
-echo "speedtest (Perform server bandwidth speedtest)"  | tee -a log-install.txt
-echo "info (Display OS Information)"  | tee -a log-install.txt
-echo "about (Display Script Information)"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Other features"  | tee -a log-install.txt
-echo "--------------"  | tee -a log-install.txt
-echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
-echo "IPv6     : [off]"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Server reboot every 00:00"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-#echo "Original Script by Fornesia, Rzengineer, Clrkz & Fawzya"  | tee -a log-install.txt
-#echo "Modified by Magallen, Maynard"  | tee -a log-install.txt
-echo "==========================================="  | tee -a log-install.txt
+
+
+echo "Extended Information"  | tee -a log-install.txt
+echo "  Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
+echo "  Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
+echo "  IPv6     : OFF"  | tee -a log-install.txt
+echo "  DDOS Protection     : Enable"  | tee -a log-install.txt
+echo "  Payload Ready       : Enable"  | tee -a log-install.txt
+echo "  SSH Protection      : Enable"  | tee -a log-install.txt
+echo "  Installation log		:	/root/log-install.txt"  | tee -a log-install.txt
+echo ""
+echo "Created By: Magallen, Maynard "  | tee -a log-install.txt
+echo "---------------------------------------------------------"
 cd
 rm -f /root/debian7.sh

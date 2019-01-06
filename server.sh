@@ -59,9 +59,20 @@ apt-get update
 apt-get -y install nginx php5-fpm php5-cli
 
 # install essential package
-apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar iftop htop nethogs nmap
-apt-get -y install build-essential
+apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar htop iftop nethogs nmap
 
+echo "clear" >> .bashrc
+echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
+echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     " | lolcat' >> .bashrc
+echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     " | lolcat' >> .bashrc
+echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
+echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
+echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
+echo 'echo -e "									Beta Test										 "' >> .bashrc
+echo 'echo -e ""' >> .bashrc
+echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
+echo 'echo -e ""' >> .bashrc
 # install webserver
 cd
 rm /etc/nginx/sites-enabled/default
@@ -235,22 +246,9 @@ apt-get update
 apt-get install neofetch
 
 # info
-echo "clear" >> .bashrc
-echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
-echo 'echo -e ":+:   :+:  :+:          :+: :+:       :+:     " | lolcat' >> .bashrc
-echo 'echo -e "+:+  +:+   +:+         +:+   +:+      +:+     " | lolcat' >> .bashrc
-echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bashrc
-echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
-echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
-echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
-echo 'echo -e "									Beta Test										 "' >> .bashrc
-echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
-echo 'echo -e ""' >> .bashrc
 echo 'echo -e "+ -- --=[ Your Virtual Private Server is now up and running"' >> .bashrc
 echo ""
 echo "--------------Server Configuration Details---------------"
-
 echo "Application & Ports"  | tee -a log-install.txt
 echo ""
 echo "  OpenSSH  : 22, 444"  | tee -a log-install.txt
@@ -268,7 +266,6 @@ echo ""
 echo " htop"  | tee -a log-install.txt
 echo " iftop"  | tee -a log-install.txt
 echo ""
-
 echo "Extended Information"  | tee -a log-install.txt
 echo "  Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "  Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt

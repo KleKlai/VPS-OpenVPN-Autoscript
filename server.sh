@@ -59,7 +59,9 @@ apt-get update
 apt-get -y install nginx php5-fpm php5-cli
 
 # install essential package
-apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar htop iftop nethogs nmap
+apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
+apt-get install htop
+apt-get install iftop 
 
 echo "clear" >> .bashrc
 echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
@@ -69,9 +71,8 @@ echo 'echo -e "+#++:++    +#+        +#++:++#++:     +#+     " | lolcat' >> .bas
 echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bashrc
 echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
 echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
-echo 'echo -e "									Beta Test										 "' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ Maynard Magallen"' >> .bashrc
+echo 'echo -e "+ -- --=[ Maynard Magallen ]=-- -- +" | lolcat'  >> .bashrc
 echo 'echo -e ""' >> .bashrc
 # install webserver
 cd

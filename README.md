@@ -2,9 +2,9 @@
 
 ### Requirements:
 Virtual Private Server (VPS) <br>
-Debian 7/8
-
-Debian 8 (Stable)
+Debian 6 (Stable) <br>
+Debian 7 (Stable) <br>
+Debian 8 (Stable) <br>
 
 ### Installation: 
 root@Debian7: ``` wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/server.sh ```

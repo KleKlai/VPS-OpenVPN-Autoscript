@@ -22,7 +22,7 @@ Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 
 ### Installation: 
 Run the script and you are good to go.<br>
-``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```
+``` apt-get update && apt-get -y upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```<br>
 Once it ends, Type `menu` to list down all available commands
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)

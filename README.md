@@ -1,9 +1,9 @@
 # SSH, Dropbear & OpenVPN Autoscript
 
-### Requirements:
+## Requirements:
 Virtual Private Server (VPS) <br>
 
-## Dont have Virtual Private Server yet?
+### Dont have Virtual Private Server yet?
 Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 [GoDaddy](https://godaddy.com/) <br>
 [Microsoft Azure](http://azure.microsoft.com/en-us/) <br>
@@ -14,7 +14,7 @@ Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 [ChunkHost](https://chunkhost.com/) <br>
 [Elastic Powered by: GoDaddy](https://www.elastichosts.com/) <br>
 
-## Operating System
+### Operating System
 Debian 6 32x 64x (Stable) <br>
 Debian 7 32x 64x (Stable) <br>
 Debian 8 32x 64x (Stable) <br>

@@ -21,7 +21,7 @@ Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
   * Ubuntu 16.4 LTS (BETA) <br>
 
 ### Installation: 
-Run the script and you are good to go.
+Run the script and you are good to go.<br>
 ``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```
 Once it ends, Type `menu` to list down all available commands
 
@@ -30,6 +30,6 @@ Once it ends, Type `menu` to list down all available commands
 ### Tools
   * htop <br>
   * iftop <br>
-  * webmin (Beta)
+  * Webmin
 
 > Feel free to suggest and contribute to this script

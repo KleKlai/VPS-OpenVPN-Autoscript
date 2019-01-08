@@ -72,7 +72,7 @@ echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bas
 echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
 echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ Klai Magallen ]=-- -- +" | lolcat'  >> .bashrc
+echo 'echo -e "+ -- --=[ Klai ]=-- -- +" | lolcat'  >> .bashrc
 echo 'echo -e ""' >> .bashrc
 # install webserver
 cd
@@ -268,7 +268,7 @@ echo " htop"  | tee -a log-install.txt
 echo " iftop"  | tee -a log-install.txt
 echo ""
 echo "Extended Information"  | tee -a log-install.txt
-echo "  Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
+echo "  Webmin   : http://$MYIP:10000/	(BETA)"  | tee -a log-install.txt
 echo "  Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
 echo "  IPv6     : OFF"  | tee -a log-install.txt
 echo "  DDOS Protection     : Enable"  | tee -a log-install.txt
@@ -276,7 +276,7 @@ echo "  Payload Ready       : Enable"  | tee -a log-install.txt
 echo "  SSH Protection      : Enable"  | tee -a log-install.txt
 echo "  Installation log		:	/root/log-install.txt"  | tee -a log-install.txt
 echo ""
-echo "Created By: Magallen, Klai "  | tee -a log-install.txt
+echo "To begin type menu to see all available commands"
 echo "---------------------------------------------------------"
 cd
 rm -f /root/debian7.sh

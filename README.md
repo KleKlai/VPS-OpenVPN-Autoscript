@@ -2,6 +2,7 @@
 
 ### Requirements:
 Virtual Private Server (VPS) <br>
+## Operating System
 Debian 6 32x 64x (Stable) <br>
 Debian 7 32x 64x (Stable) <br>
 Debian 8 32x 64x (Stable) <br>

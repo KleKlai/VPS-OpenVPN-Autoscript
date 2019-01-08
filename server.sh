@@ -5,9 +5,9 @@ wget -q -O daftarip http://188.166.215.119:85/ocs/ip.txt
 if ! grep -w -q $MYIP daftarip; then
 	echo "Sorry, only registered IPs can use this script!"
 	if [[ $vps = "vps" ]]; then
-		echo "Modified by Maynard"
+		echo "Modified by Klai"
 	else
-		echo "Modified by Maynard"
+		echo "Modified by Klai"
 	fi
 	rm -f /root/daftarip
 	exit
@@ -46,7 +46,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # set repo
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/sources.list.debian7"
+wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/sources.list.debian7"
 wget "http://www.dotdeb.org/dotdeb.gpg"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
@@ -61,7 +61,7 @@ apt-get -y install nginx php5-fpm php5-cli
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 apt-get install htop
-apt-get install iftop 
+apt-get install iftop
 
 echo "clear" >> .bashrc
 echo 'echo -e ":::    ::: :::            :::     ::::::::::: " | lolcat' >> .bashrc
@@ -72,43 +72,43 @@ echo 'echo -e "+#+  +#+   +#+        +#+     +#+     +#+     " | lolcat' >> .bas
 echo 'echo -e "#+#   #+#  #+#        #+#     #+#     #+#     " | lolcat' >> .bashrc
 echo 'echo -e "###    ### ########## ###     ### ########### " | lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "+ -- --=[ Maynard Magallen ]=-- -- +" | lolcat'  >> .bashrc
+echo 'echo -e "+ -- --=[ Klai Magallen ]=-- -- +" | lolcat'  >> .bashrc
 echo 'echo -e ""' >> .bashrc
 # install webserver
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>Powered By: University of Immaculate Conception</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/vps.conf"
 service nginx restart
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/1194.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/1194.conf"
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
-wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/iptables"
+wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/iptables"
 chmod +x /etc/network/if-up.d/iptables
 service openvpn restart
 
 # Configure openvpn
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/client-1194.conf"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/client-1194.conf"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /home/vps/public_html/
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/badvpn-udpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/badvpn-udpgw"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/badvpn-udpgw64"
+  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/badvpn-udpgw64"
 fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
@@ -133,7 +133,7 @@ service dropbear restart
 # install squid3
 cd
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/squid3.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/squid3.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
@@ -179,14 +179,14 @@ service fail2ban restart
 # install ddos deflate
 cd
 apt-get -y install dnsutils dsniff
-wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/ddos-deflate-master.zip
+wget https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/ddos-deflate-master.zip
 unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
 rm -rf /root/ddos-deflate-master.zip
 
 # bannerrm /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/issues.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/issues.net"
 sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 service ssh restart
@@ -198,16 +198,16 @@ apt-get -y --force-yes -f install libxml-parser-perl
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/trial.sh"
-wget -O delete "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/hapus.sh"
-wget -O check "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/user-list.sh"
-wget -O restart "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/resvis.sh"
-wget -O speedtest "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/about.sh"
+wget -O menu "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/trial.sh"
+wget -O delete "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/hapus.sh"
+wget -O check "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/user-login.sh"
+wget -O member "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/user-list.sh"
+wget -O restart "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/resvis.sh"
+wget -O speedtest "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/info.sh"
+wget -O about "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/about.sh"
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
@@ -276,7 +276,7 @@ echo "  Payload Ready       : Enable"  | tee -a log-install.txt
 echo "  SSH Protection      : Enable"  | tee -a log-install.txt
 echo "  Installation log		:	/root/log-install.txt"  | tee -a log-install.txt
 echo ""
-echo "Created By: Magallen, Maynard "  | tee -a log-install.txt
+echo "Created By: Magallen, Klai "  | tee -a log-install.txt
 echo "---------------------------------------------------------"
 cd
 rm -f /root/debian7.sh

@@ -8,7 +8,7 @@ Debian 8 (Stable) <br>
 
 ### Installation: 
 
-``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL && chmod +x server.sh && ./server.sh```
+``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 

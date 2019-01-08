@@ -18,8 +18,6 @@ htop <br>
 iftop <br>
 webmin (Beta)
 
-Feel free to suggest and contribute to this script
-
 ## Dont have Virtual Private Server yet?
 Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 [GoDaddy](https://godaddy.com/) <br>
@@ -30,3 +28,5 @@ Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 [BlueHost](https://my.vultr.com/) <br>
 [ChunkHost](https://chunkhost.com/) <br>
 [Elastic Powered by: GoDaddy](https://www.elastichosts.com/) <br>
+
+Feel free to suggest and contribute to this script

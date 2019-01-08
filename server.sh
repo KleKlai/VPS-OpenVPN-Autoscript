@@ -141,34 +141,41 @@ service webmin restart
 service vnstat restart
 apt-get -y --force-yes -f install libxml-parser-perl
 
+# install stunnel4 From Premium Script
+apt-get -y install stunnel4
+wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
+wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/req/stunnel.conf"
+sed -i $MYIP2 /etc/stunnel/stunnel.conf
+sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
+service stunnel4 restart
 
 # install stunnel
-apt-get install stunnel4 -y
-cat > /etc/stunnel/stunnel.conf <<-END
-cert = /etc/stunnel/stunnel.pem
-client = no
-socket = a:SO_REUSEADDR=1
-socket = l:TCP_NODELAY=1
-socket = r:TCP_NODELAY=1
+#apt-get install stunnel4 -y
+#cat > /etc/stunnel/stunnel.conf <<-END
+#cert = /etc/stunnel/stunnel.pem
+#client = no
+#socket = a:SO_REUSEADDR=1
+#socket = l:TCP_NODELAY=1
+#socket = r:TCP_NODELAY=1
 
 
-[dropbear]
-accept = 443
-connect = 127.0.0.1:3128
+#[dropbear]
+#accept = 443
+#connect = 127.0.0.1:3128
 
-END
+#END
 
-#membuat sertifikat
-openssl genrsa -out key.pem 2048
-openssl req -new -x509 -key key.pem -out cert.pem -days 1095 \
--subj "/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
-cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
+#Member certificate
+#openssl genrsa -out key.pem 2048
+#openssl req -new -x509 -key key.pem -out cert.pem -days 1095 \
+#-subj "/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
+#cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 
-#konfigurasi stunnel
-sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-/etc/init.d/stunnel4 restart
-
-# teks berwarna
+#Configure stunnel
+#sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
+#/etc/init.d/stunnel4 restart */
+###############################################################################
+# Install Ruby & lolcat
 apt-get -y install ruby
 gem install lolcat
 
@@ -210,6 +217,7 @@ wget -O about "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
+# converting to executable
 chmod +x menu
 chmod +x usernew
 chmod +x trial
@@ -221,7 +229,7 @@ chmod +x speedtest
 chmod +x info
 chmod +x about
 
-# finishing
+# Finalizing
 cd
 chown -R www-data:www-data /home/vps/public_html
 service nginx start
@@ -234,7 +242,7 @@ service webmin restart
 rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
 
-# install neofetch
+# Install neofetch
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
 apt-get update
@@ -246,6 +254,7 @@ apt-get update
 apt-get install neofetch
 
 # info
+clear
 echo 'echo -e "+ -- --=[ Your Virtual Private Server is now up and running"' >> .bashrc
 echo ""
 echo "--------------Server Configuration Details---------------"
@@ -255,7 +264,7 @@ echo "  OpenSSH  : 22, 444"  | tee -a log-install.txt
 echo "  Dropbear : 143, 3128"  | tee -a log-install.txt
 echo "  SSL      : 443"  | tee -a log-install.txt
 echo "  Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "  OpenVpn	 : TCP (1194)"  | tee -a log-install.txt
+echo "  OpenVpn	: TCP (1194)"  | tee -a log-install.txt
 echo "  Badvpn   : badvpn-udpgw port (7300)"  | tee -a log-install.txt
 echo "  Nginx    : 81"  | tee -a log-install.txt
 echo ""
@@ -273,7 +282,7 @@ echo "  IPv6     : OFF"  | tee -a log-install.txt
 echo "  DDOS Protection     : Enable"  | tee -a log-install.txt
 echo "  Payload Ready       : Enable"  | tee -a log-install.txt
 echo "  SSH Protection      : Enable"  | tee -a log-install.txt
-echo "  Installation log		:	/root/log-install.txt"  | tee -a log-install.txt
+echo "  Installation log	:	/root/log-install.txt"  | tee -a log-install.txt
 echo ""
 echo "Thank You"
 echo "---------------------------------------------------------"

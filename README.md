@@ -7,8 +7,8 @@ Debian 7 (Stable) <br>
 Debian 8 (Stable) <br>
 
 ### Installation: 
-``` apt-get update && apt-get upgrade && wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/server.sh ```
-``` chmod +x server.sh && ./server.sh```
+
+``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL && chmod +x server.sh && ./server.sh```
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 

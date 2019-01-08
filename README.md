@@ -15,20 +15,21 @@ Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
 [Elastic Powered by: GoDaddy](https://www.elastichosts.com/) <br>
 
 ### Operating System
-Debian 6 32x 64x (Stable) <br>
-Debian 7 32x 64x (Stable) <br>
-Debian 8 32x 64x (Stable) <br>
-Ubuntu 16.4 LTS (BETA) <br>
+  Debian 6 32x 64x (Stable) <br>
+  Debian 7 32x 64x (Stable) <br>
+  Debian 8 32x 64x (Stable) <br>
+  Ubuntu 16.4 LTS (BETA) <br>
 
 ### Installation: 
-
+Run the script and you are good to go.
 ``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```
+Once it ends, Type `menu` to list down all available commands
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 
 ### Tools
-htop <br>
-iftop <br>
-webmin (Beta)
+  htop <br>
+  iftop <br>
+  webmin (Beta)
 
 > Feel free to suggest and contribute to this script

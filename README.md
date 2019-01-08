@@ -19,5 +19,3 @@ iftop <br>
 webmin (Beta)
 
 Feel free to suggest and contribute to this script
-
-Original Script of Fornesia, Rzengineer, Clrkz % Fawzya

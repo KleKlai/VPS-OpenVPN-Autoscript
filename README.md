@@ -30,6 +30,6 @@ Once it ends, Type `menu` to list down all available commands
 ### Tools
   * htop <br>
   * iftop <br>
-  * webmin (Beta)
+  * Webmin
 
 > Feel free to suggest and contribute to this script

@@ -5,6 +5,7 @@ Virtual Private Server (VPS) <br>
 Debian 6 (Stable) <br>
 Debian 7 (Stable) <br>
 Debian 8 (Stable) <br>
+Ubuntu 16.4 LTS (BETA) <br>
 
 ### Installation: 
 

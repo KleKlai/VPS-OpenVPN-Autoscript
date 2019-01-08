@@ -45,13 +45,6 @@ ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
-# set repo
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/sources.list.debian7"
-wget "http://www.dotdeb.org/dotdeb.gpg"
-cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
-sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
-wget -qO - http://www.webmin.com/jcameron-key.asc | apt-key add -
-
 # update
 apt-get update
 
@@ -139,9 +132,15 @@ service squid3 restart
 
 # install webmin
 cd
-apt-get -y install webmin
+wget "http://script.hostingtermurah.net/repo/webmin_1.801_all.deb"
+dpkg --install webmin_1.801_all.deb;
+apt-get -y -f install;
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
+rm /root/webmin_1.801_all.deb
 service webmin restart
+service vnstat restart
+apt-get -y --force-yes -f install libxml-parser-perl
+
 
 # install stunnel
 apt-get install stunnel4 -y

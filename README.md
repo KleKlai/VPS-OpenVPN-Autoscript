@@ -19,3 +19,15 @@ iftop <br>
 webmin (Beta)
 
 Feel free to suggest and contribute to this script
+
+## Dont have Virtual Private Server yet?
+Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit 
+[GoDaddy](https://godaddy.com/)
+[Microsoft Azure](http://azure.microsoft.com/en-us/)
+[Linode](https://www.linode.com/)
+[Vultr](https://my.vultr.com/)
+[Amazon Web Services](https://aws.amazon.com/)
+[BlueHost](https://my.vultr.com/)
+[Alibaba]()
+[ChunkHost](https://chunkhost.com/)
+[Elastic Powered by: GoDaddy](https://www.elastichosts.com/)

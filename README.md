@@ -1,4 +1,4 @@
-# SSH, Dropbear & OpenVPN Autoscript
+# OpenVPN, SSH, Dropbear Autoscript
 
 ## Requirements:
 Virtual Private Server (VPS) <br>

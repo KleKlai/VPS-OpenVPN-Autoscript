@@ -1,22 +1,35 @@
-# Debian 8 SSH, Dropbear & OpenVPN Autoscript
+# SSH, Dropbear & OpenVPN Autoscript
 
-### Requirements:
+## Requirements:
 Virtual Private Server (VPS) <br>
-Debian 6 (Stable) <br>
-Debian 7 (Stable) <br>
-Debian 8 (Stable) <br>
+
+### Dont have Virtual Private Server yet?
+Try [Digital Ocean](https://m.do.co/c/7e70da047d1d) 100$ Free Credit <br>
+[GoDaddy](https://godaddy.com/) <br>
+[Microsoft Azure](http://azure.microsoft.com/en-us/) <br>
+[Linode](https://www.linode.com/) <br>
+[Vultr](https://my.vultr.com/) <br>
+[Amazon Web Services](https://aws.amazon.com/) <br>
+[BlueHost](https://my.vultr.com/) <br>
+[ChunkHost](https://chunkhost.com/) <br>
+[Elastic Powered by: GoDaddy](https://www.elastichosts.com/) <br>
+
+### Operating System
+  Debian 6 32x 64x (Stable) <br>
+  Debian 7 32x 64x (Stable) <br>
+  Debian 8 32x 64x (Stable) <br>
+  Ubuntu 16.4 LTS (BETA) <br>
 
 ### Installation: 
-``` apt-get update && apt-get upgrade && wget https://raw.githubusercontent.com/MMagallen/Debian7-OpenVpn-Autoscript/master/server.sh ```
-``` chmod +x server.sh && ./server.sh```
+Run the script and you are good to go.
+``` apt-get update && apt-get upgrade && wget https://git.io/fhGpL -O server.sh && bash server.sh ```
+Once it ends, Type `menu` to list down all available commands
 
 [Enable BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
 
 ### Tools
-htop <br>
-iftop <br>
-webmin (Beta)
+  htop <br>
+  iftop <br>
+  webmin (Beta)
 
-Feel free to suggest and contribute to this script
-
-Original Script of Fornesia, Rzengineer, Clrkz % Fawzya
+> Feel free to suggest and contribute to this script

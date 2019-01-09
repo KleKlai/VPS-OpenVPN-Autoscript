@@ -138,14 +138,8 @@ apt-get -y -f install;
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 rm /root/webmin_1.801_all.deb
 service webmin restart
-service vnstat restart
-apt-get -y --force-yes -f install libxml-parser-perl
-wget "http://prdownloads.sourceforge.net/sourceforge/webadmin/webmin_1.900_all.deb"
-wget "http://downloads.sourceforge.net/project/webadmin/webmin/1.900/webmin_1.900_all.deb"
-wget "https://nchc.dl.sourceforge.net/project/webadmin/webmin/1.900/webmin_1.900_all.deb"
-dpkg --install webmin_1.900_all.deb;
-apt-get -y -f install;
-service webmin restart
+#service vnstat restart
+a#pt-get -y --force-yes -f install libxml-parser-perl
 
 # install stunnel4 From Premium Script
 apt-get -y install stunnel4

@@ -45,6 +45,10 @@ ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
+#set Repository
+sh -c 'echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
+wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+
 # update
 apt-get update
 

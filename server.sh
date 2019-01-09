@@ -132,14 +132,14 @@ service squid3 restart
 
 # install webmin
 cd
-wget "http://script.hostingtermurah.net/repo/webmin_1.801_all.deb"
-dpkg --install webmin_1.801_all.deb;
+wget "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/blob/master/Configuration/webmin_1.900_all.deb"
+dpkg --install webmin_1.900_all.deb;
 apt-get -y -f install;
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
-rm /root/webmin_1.801_all.deb
+rm /root/webmin_1.900_all.deb
 service webmin restart
 #service vnstat restart
-a#pt-get -y --force-yes -f install libxml-parser-perl
+#apt-get -y --force-yes -f install libxml-parser-perl
 
 # install stunnel4 From Premium Script
 apt-get -y install stunnel4

@@ -132,7 +132,7 @@ service squid3 restart
 
 # install webmin
 cd
-wget "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/blob/master/Configuration/webmin_1.900_all.deb"
+wget "https://raw.githubusercontent.com/KleKlai/VPS-OpenVPN-Autoscript/master/Configuration/webmin_1.900_all.deb"
 dpkg --install webmin_1.900_all.deb;
 apt-get -y -f install;
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
@@ -239,7 +239,7 @@ echo "  OpenSSH  : 22, 444"  | tee -a log-install.txt
 echo "  Dropbear : 143, 3128"  | tee -a log-install.txt
 echo "  SSL      : 443"  | tee -a log-install.txt
 echo "  Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "  OpenVpn	: TCP (1194)"  | tee -a log-install.txt
+echo "  OpenVpn: TCP (1194)"  | tee -a log-install.txt
 echo "  Badvpn   : badvpn-udpgw port (7300)"  | tee -a log-install.txt
 echo "  Nginx    : 81"  | tee -a log-install.txt
 echo ""
@@ -257,7 +257,7 @@ echo "  IPv6     : OFF"  | tee -a log-install.txt
 echo "  DDOS Protection     : Enable"  | tee -a log-install.txt
 echo "  Payload Ready       : Enable"  | tee -a log-install.txt
 echo "  SSH Protection      : Enable"  | tee -a log-install.txt
-echo "  Installation log	:	/root/log-install.txt"  | tee -a log-install.txt
+echo "  Installation log:	/root/log-install.txt"  | tee -a log-install.txt
 echo ""
 echo "Thank You"
 echo "---------------------------------------------------------"

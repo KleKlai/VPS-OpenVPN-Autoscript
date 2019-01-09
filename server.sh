@@ -154,7 +154,7 @@ apt-get -y install ruby
 gem install lolcat
 
 # install
-fail2banapt-get -y install fail2ban;
+apt-get -y install fail2ban python-pyinotify
 service fail2ban restart
 
 # install ddos deflate

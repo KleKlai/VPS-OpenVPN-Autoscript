@@ -1,5 +1,5 @@
 # OpenVPN, SSH, Dropbear Autoscript
-
+[![Build Status](https://img.shields.io/travis/streamaserver/streama/master.svg?style=for-the-badge)]
 ## Requirements:
 Virtual Private Server (VPS) <br>
 
